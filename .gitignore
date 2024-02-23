@@ -1,1 +1,4 @@
 Builds/**
+Config/SteamVDF/**
+*.cmd
+!SetUnrealEnginePath.cmd
