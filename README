@@ -1,0 +1,23 @@
+Setup with SampleUsage Scripts:
+---------------------------------
+1. Copy all scripts from SampleUsage to the directory this README lives in
+2. Rename all occurences of PROJECT in these scripts with your project's name.
+Info: it's assumed that your project's .uproject lives in ./../../PROJECT, 
+but you can adjust that in the sample scripts as you wish.
+
+Day-to-Day Usage:
+---------------------------------
+1. Open command line terminal in this directory
+2. Run BuildZip_PROJECT.cmd from this directory
+3. Find the finished build and zip in the Builds/ directory
+
+Notes on Feature-Completeness
+---------------------------------
+This project is heavily work in progress.
+
+Important!
+- Ignore the contents of Config and Scripts (for now).
+- GoogleDrive and Steam deployment are deactivated for now.
+
+GoogleDrive deployment works, but needs some special user authorization setup.
+Ask me if interested :)
