@@ -1,3 +1,7 @@
+A collection of batch scripts to automate Unreal Engine project building/versioning/upload/etc. 
+
+The repository is administered by the NightinGames UG, but the project is open source!
+
 Setup with SampleUsage Scripts:
 ---------------------------------
 1. Copy all scripts from SampleUsage to the directory this README lives in
