@@ -16,7 +16,9 @@ set "EngineVersion=%~3"
 call "Scripts/ResolveRelativePath.cmd" "%~4"
 set "SteamSdkDir=%AbsPath%"
 
-set "ReleaseName=%~5"
+set "BinaryConfiguration=%~5"
+
+set "ReleaseName=%~6"
 
 :: Check if the command line parameters were provided
 if "%ProjectPath%"=="" (
@@ -58,7 +60,7 @@ set "SteamCmdPath=%SteamContentBuilderDir%\builder\steamcmd.exe"
 set "SteamVdf=%CurrentDirectory%\SteamVDFs\app_build_1000.vdf"
 
 :: Log results
-echo "---- SetDirectories.cmd START ----"
+echo "---- SetDerivePathConstants.cmd START ----"
 echo "Current Directory = %CurrentDirectory%"
 echo "Project Path = %ProjectPath%"
 echo "Project Root = %ProjectRoot%"
@@ -72,8 +74,9 @@ echo "Unreal Version = %EngineVersion%"
 echo "Unreal Path = %UnrealEnginePath%"
 echo "Unreal Build Tool Path = %UBTPath%"
 echo "Unreal Automation Tool Path = %UATPath%"
+echo "Binary Configuration = %BinaryConfiguration%"
 echo "Release Name = %ReleaseName%"
 echo "Steam SDK Directory = %SteamSdkDir%"
 echo "Steam Command Line Path = %SteamCmdPath%"
-echo "---- SetDirectories.cmd END ----"
+echo "---- SetDerivePathConstants.cmd END ----"
 echo ""
